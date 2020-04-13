@@ -1,4 +1,4 @@
-# ProyectoFormacionBJ
+# ProyectoFormacionBS
 
 Proyecto realizado para lo formación de BeSoftware. Se trata de un sistema simple de gestión de usuarios, en el que he querido practicar sobre C#, una aplicación de escritorio con un CRUD a una base de datos remota MySql, que paralelamente cree y guarde la información con las preferencias de cada usuario, en una archivo XML.
 
