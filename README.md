@@ -11,6 +11,7 @@ Hay muchas mejoras y características que se pueden añadir al sistema. Este sis
 ## Base de datos info:
 La base de datos es una MySql, con una única tabla llamada "user", dejo la sentencia que la crea, por si se desea poner ejecutar la aplicación.
 
+```
 create table user
 (
     uuid              char(60)                             not null,
@@ -30,6 +31,7 @@ create table user
 
 alter table user
     add primary key (uuid);
+ ```
  
 ## Adicionalmente:
 Si su pretensión es ejecutar el proyecto, tambien deberá crear y modificar el nombre del archivo de audio para que todo funcione correctamente.
