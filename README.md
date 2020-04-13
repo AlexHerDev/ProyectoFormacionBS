@@ -11,7 +11,7 @@ Hay muchas mejoras y características que se pueden añadir al sistema. Este sis
 ## Base de datos info:
 La base de datos es una MySql, con una única tabla llamada "user", dejo la sentencia que la crea, por si se desea poner ejecutar la aplicación.
 
-```
+```Mysql
 create table user
 (
     uuid              char(60)                             not null,
