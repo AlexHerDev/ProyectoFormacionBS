@@ -9,7 +9,7 @@ El SuperUsuario, tiene credenciales especiales para acceder al sistema. Usará c
 Hay muchas mejoras y características que se pueden añadir al sistema. Este sistema es una primera aproximación para practicar el funcionamiento. Hay algunos patrones de diseño que pueden ser implementados y mejorados los que ya están. También, se debería de organizar en una estructura de carpetas que permita tenerlo todo más ordenado.
 
 ## Base de datos info:
-La base de datos es una MySql, con una única tabla llamada "user", dejo la sentencia que la crea, por si se desea poner ejecutar la aplicación.
+La base de datos es una MySql, con una única tabla llamada "user", dejo la sentencia que la crea, por si se desea poner en marcha la aplicación.
 
 ```Mysql
 create table user
