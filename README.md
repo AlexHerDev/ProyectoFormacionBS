@@ -7,3 +7,29 @@ El sistema contempla dos tipos de usuarios, un SuperUsuario y un usuario normal 
 El SuperUsuario, tiene credenciales especiales para acceder al sistema. Usará como user=>admin y como pass=>0. El usuario normal, entrará al sistema con user=>"nombre de usuario" y pass=>"la establecida por el SuperUsuario".
 
 Hay muchas mejoras y características que se pueden añadir al sistema. Este sistema es una primera aproximación para practicar el funcionamiento. Hay algunos patrones de diseño que pueden ser implementados y mejorados los que ya están. También, se debería de organizar en una estructura de carpetas que permita tenerlo todo más ordenado.
+
+#Base de datos info:
+La base de datos es una MySql, con una única tabla llamada "user", dejo la sentencia que la crea, por si se desea poner ejecutar la aplicación.
+
+create table user
+(
+    uuid              char(60)                             not null,
+    nombre            char(20)                             not null,
+    pass              char(20)                             not null,
+    fondoColor        int        default 0                 null,
+    altoPantalla      float      default 0                 null,
+    anchoPantalla     float      default 0                 null,
+    letraColor        int        default 0                 null,
+    espacioLibreDisco float      default -1                null,
+    esAdmin           tinyint(1) default 0                 null,
+    fecha             timestamp  default CURRENT_TIMESTAMP null,
+    xmlGenerado       tinyint(1) default 0                 not null,
+    constraint user_guid_uindex
+        unique (uuid)
+);
+
+alter table user
+    add primary key (uuid);
+ 
+#Adicionalmente:
+Si su pretensión es ejecutar el proyecto, tambien deberá crear y modificar el nombre del archivo de audio.   
